@@ -25,6 +25,7 @@ public class KeycloakServiceImpl implements KeycloakService {
     private final KeycloakProperties keycloakProperties;
 
     public KeycloakServiceImpl(KeycloakProperties keycloakProperties) {
+
         this.keycloakProperties = keycloakProperties;
     }
 
