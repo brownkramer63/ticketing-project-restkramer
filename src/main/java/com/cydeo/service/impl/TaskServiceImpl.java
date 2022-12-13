@@ -134,6 +134,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<TaskDTO> listAllTasksByStatus(Status status) {
+
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         SimpleKeycloakAccount details = (SimpleKeycloakAccount) authentication.getDetails();
         String username = details.getKeycloakSecurityContext().getToken().getPreferredUsername();
